@@ -21,7 +21,9 @@
 		<!-- 옵션 -->
 		<property name="hibernate.show_sql" value="true"/> <!-- 콘솔에 sql 진행이 보임 -->
 		<property name="hibernate.hbm2ddl.auto" value="update"/> 
-		<!-- create : 실행하는 순간에 테이블이 자동으로 생성됨 안만들어질 경우 데이터베이스가서 만들면됨-->
+		<!-- create : ddl / 실행하는 순간에 테이블이 자동으로 생성됨 안만들어질 경우 데이터베이스가서 만들면됨
+		create할 경우 main에서 데이터를 입력 한 후에 또 입력하면 기존에 있던 정보가 전부 드랍 된 후 들어감 
+		그래서 수업 중에는 create안쓰고 update 쓸것 -->
 		<!-- update : crud / DeptVO의 @Table에(name="")이름 지정했을 경우 데이터베이스쪽에 없는 테이블 이름이면 테이블이 자동으로 생성됨-->
 		
 	</properties>

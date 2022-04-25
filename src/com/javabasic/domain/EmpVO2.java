@@ -1,15 +1,15 @@
 package com.javabasic.domain;
 
 /*******************************
- * 	@Column 속성
+ * 	@Column 속성 (=제약조건)
  * 											[기본값 default]
- * 	` name		매핑될 컬럼명이 다른 경우			변수명
- * 	` unique	unique 제약조건 ex)주민번호		false -> unique지정하려면 true로 지정하면됨
+ * 	` name		매핑될 컬럼명이 다른 경우			변수명과 동일
+ * 	` unique	unique 제약조건 ex)주민번호 		false -> unique지정하려면 true로 지정하면됨 +unique는 null값허용하면서 유일값
  * 	` nullable 	NULL허용						false -> null값 들어갈 수 있게하려면 true로 지정
  * 	` length	문자열 길이					255
  * 	` precision	숫자타입의 전체 자리수
  * 	` scale		숫자타입의 소숫점 자리수
- * 	` columnDefinition		이 컬럼에 대한 ddl 문장을 직접 기술 
+ * 	` columnDefinition		이 컬럼에 대한 ddl 문장을 직접 기술 / 가급적이면 안쓸것임
  * */
 
 import java.util.Date;

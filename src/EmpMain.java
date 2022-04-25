@@ -29,7 +29,7 @@ public class EmpMain {
 		vo.setEmpno(5);
 		vo.setEname("ts");
 		vo.setJob("개발자");
-		vo.setHiredate(new Date("2022/04/25"));
+		vo.setHiredate(new Date()); //new Date("2022/04/25")이렇게 쓰면 날짜 지정도 됨
 		vo.setSal(500);
 		vo.setComm(200);
 		vo.setMgr(20);
