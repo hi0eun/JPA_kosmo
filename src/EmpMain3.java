@@ -43,7 +43,7 @@ public class EmpMain3 {
 		em.persist(vo);
 		tx.commit();
 		
-		em.persist(vo);
+
 		}catch( Exception ex) {
 			System.out.println("실패: " + ex.getMessage());
 			tx.rollback();
