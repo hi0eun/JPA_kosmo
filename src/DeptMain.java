@@ -34,7 +34,7 @@ public class DeptMain {
 		em.persist(vo);//내가만든 객체 vo를 persist 등록하겠다
 		tx.commit(); //트랜잭션을 통해서 commit을 날려줘야함 
 		
-		em.persist(vo);
+
 		}catch( Exception ex) {
 			System.out.println("실패: " + ex.getMessage());
 			tx.rollback(); //실패했을 경우 롤백
