@@ -8,7 +8,7 @@
 	<!-- * 영속성 유닛 설정 : 여기 지정한 name값으로 찾음 -->
 	<persistence-unit name="bContextState"> <!-- 이름 안써도 되는데 헷갈리니까 쓰기  -->
 	
-	<!-- JAP (DB) 프라퍼티 설정  -->
+	<!-- JPA (DB) 프라퍼티 설정  -->
 	<properties>
 		<property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
 		<property name="javax.persistence.jdbc.user" value="root"/>

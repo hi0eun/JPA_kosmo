@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
-//EMP_A 테이블 매핑
+//EMP_D 테이블 매핑
 
 @Data //@Getter + @Setter + @ToString + @NoArgsConstructor //인자있는 생성자 함수는 따로 추가해주는것 같음!
 
