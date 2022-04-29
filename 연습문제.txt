@@ -1,0 +1,16 @@
+
+--1> 특정부서에 속하지 않은 직원들 출력
+SELECT * FROM emp_t WHERE deptno IS NULL; 
+
+--2> 평균급여가 2000 이상인 부서정보 출력
+SELECT * 
+FROM dept_t 
+WHERE deptno in (select deptno
+from emp_t
+group by deptno
+having AVG(sal) >= 2000);
+--3> 직원이 없는 부서 정보 출력
+눌이 아닌deptno 검색해서 그게 아닌 부서 출력
+SELECT deptno 
+FROM dept_t
+WHERE deptno NOT in (SELECT deptno FROM emp_t where deptno IS NOT NULL GROUP BY deptno);
